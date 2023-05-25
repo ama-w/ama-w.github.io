@@ -6509,7 +6509,7 @@
                     "{arrowup}": "↑",
                                 "{arrowleft}": "←",
                                 "{arrowdown}": "↓",
-                                "{arrowright}": "→"
+                                "{arrowright}": "→" 
                 }, {
                     "{esc}": "ESC",
                     "{bksp}": "Backspace",
