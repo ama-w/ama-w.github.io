@@ -6576,7 +6576,7 @@
                             if ("←" === e) return [a.KBD_left];
                             if ("→" === e) return [a.KBD_right];
                             if ("↑" === e) return [a.KBD_top];
-                            if ("↓" === e) return [a.KBD_down]; 
+                            if ("↓" === e) return [a.KBD_down];
                             const t = (0, a.domToKeyCode)(e.toUpperCase().charCodeAt(0));
                             return 0 === t ? [] : [t]
                         }(e);
