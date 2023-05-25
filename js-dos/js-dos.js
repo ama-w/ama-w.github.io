@@ -6569,7 +6569,7 @@
                             if (e.length > 1) return "{enter}" === e ? [a.KBD_enter] : "{shift}" === e ? [a.KBD_leftshift] : "{bksp}" === e ? [a.KBD_backspace] : "{lock}" === e ? [a.KBD_capslock] : "{tab}" === e ? [a.KBD_tab] : "{space}" === e ? [a.KBD_space] : "{esc}" === e ? [a.KBD_esc] : "ctrl" === e ? [a.KBD_leftctrl] : "{alt}" === e ? [a.KBD_leftalt] : "{arrowleft}" === e ? [a.KBD_left] : "{arrowright}" === e ? [a.KBD_right] : (console.warn("Unknown button", e), []); 
                             if ("," === e) return [a.KBD_comma];
                             if ("." === e) return [a.KBD_period];
-                            if ("'" === e) return [a.KBD_quote];
+                            if ("'" === e) return [a.KBD_quote]; 
                             if (":" === e) return [a.KBD_semicolon];
                             if ("{" === e) return [a.KBD_leftshift, a.KBD_leftbracket];
                             if ("}" === e) return [a.KBD_leftshift, a.KBD_rightbracket];
