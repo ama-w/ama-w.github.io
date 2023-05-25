@@ -4407,7 +4407,7 @@
                     }], (n = [{
                         key: "getButtonClass",
                         value: function(e) {
-                            var t = e.includes("{") && e.includes("}") && "{//}" !== e ? "standardBtn" : "standardBtn", 
+                            var t = e.includes("{") && e.includes("}") && "{//}" !== e ? "functionBtn" : "standardBtn",
                                 n = e.replace("{", "").replace("}", ""),
                                 r = "";
                             return "standardBtn" !== t && (r = " hg-button-".concat(n)), "hg-".concat(t).concat(r)
@@ -6566,15 +6566,15 @@
                             display: t[n]
                         });
                         const r = function(e) {
-                            if (e.length > 1) return "{enter}" === e ? [a.KBD_enter] : "{shift}" === e ? [a.KBD_leftshift] : "{bksp}" === e ? [a.KBD_backspace] : "{lock}" === e ? [a.KBD_capslock] : "{tab}" === e ? [a.KBD_tab] : "{space}" === e ? [a.KBD_space] : "{esc}" === e ? [a.KBD_esc] : "ctrl" === e ? [a.KBD_leftctrl] : "{alt}" === e ? [a.KBD_leftalt] : "{arrowleft}" === e ? [a.KBD_arrowleft] : "{arrowright}" === e ? [a.KBD_arrowright] : (console.warn("Unknown button", e), []); 
+                            if (e.length > 1) return "{enter}" === e ? [a.KBD_enter] : "{shift}" === e ? [a.KBD_leftshift] : "{bksp}" === e ? [a.KBD_backspace] : "{lock}" === e ? [a.KBD_capslock] : "{tab}" === e ? [a.KBD_tab] : "{space}" === e ? [a.KBD_space] : "{esc}" === e ? [a.KBD_esc] : "ctrl" === e ? [a.KBD_leftctrl] : "{alt}" === e ? [a.KBD_leftalt] : "{left}" === e ? [a.KBD_left] : "{right}" === e ? [a.KBD_right] : (console.warn("Unknown button", e), []); 
                             if ("," === e) return [a.KBD_comma];
                             if ("." === e) return [a.KBD_period];
                             if ("'" === e) return [a.KBD_quote];
                             if (":" === e) return [a.KBD_semicolon];
                             if ("{" === e) return [a.KBD_leftshift, a.KBD_leftbracket];
                             if ("}" === e) return [a.KBD_leftshift, a.KBD_rightbracket];
-                            // if ("←" === e) return [a.KBD_arrowleft];
-                            // if ("→" === e) return [a.KBD_arrowright]; 
+                            if ("←" === e) return [a.KBD_arrowleft];
+                            if ("→" === e) return [a.KBD_arrowright]; 
                             const t = (0, a.domToKeyCode)(e.toUpperCase().charCodeAt(0));
                             return 0 === t ? [] : [t]
                         }(e);
