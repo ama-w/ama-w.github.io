@@ -4407,7 +4407,7 @@
                     }], (n = [{
                         key: "getButtonClass",
                         value: function(e) {
-                            var t = e.includes("{") && e.includes("}") && "{//}" !== e ? "functionBtn" : "standardBtn",
+                            var t = e.includes("{") && e.includes("}") && "{//}" !== e ? "standardBtn" : "standardBtn",
                                 n = e.replace("{", "").replace("}", ""),
                                 r = "";
                             return "standardBtn" !== t && (r = " hg-button-".concat(n)), "hg-".concat(t).concat(r)
@@ -5073,11 +5073,11 @@
                                     }) : (g.onclick = function() {
                                         e.isMouseHold = !1, e.handleButtonClicked(t)
                                     }, g.onmousedown = function(n) {
-                                        e.handleButtonClicked(t), e.handleButtonMouseDown(t, n)
+                                        e.handleButtonMouseDown(t, n)
                                     }, g.onmouseup = function(n) {
                                         e.handleButtonMouseUp(t, n)
                                     }) : (g.onpointerdown = function(n) {
-                                        e.handleButtonClicked(t), e.handleButtonMouseDown(t, n) 
+                                        e.handleButtonClicked(t), e.handleButtonMouseDown(t, n)
                                     }, g.onpointerup = function(n) {
                                         e.handleButtonMouseUp(t, n)
                                     }, g.onpointercancel = function(n) {
