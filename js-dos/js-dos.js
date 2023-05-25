@@ -6569,8 +6569,8 @@
                             if (":" === e) return [a.KBD_semicolon];
                             if ("{" === e) return [a.KBD_leftshift, a.KBD_leftbracket];
                             if ("}" === e) return [a.KBD_leftshift, a.KBD_rightbracket];
-                            if ("←" === e) return [a.KBD_arrowleft];
-                            if ("→" === e) return [a.KBD_arrowright];
+                            // if ("←" === e) return [a.KBD_arrowleft];
+                            // if ("→" === e) return [a.KBD_arrowright];
                             const t = (0, a.domToKeyCode)(e.toUpperCase().charCodeAt(0));
                             return 0 === t ? [] : [t]
                         }(e);
