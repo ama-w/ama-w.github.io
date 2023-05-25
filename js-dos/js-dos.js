@@ -5073,7 +5073,7 @@
                                     }) : (g.onclick = function() {
                                         e.isMouseHold = !1, e.handleButtonClicked(t)
                                     }, g.onmousedown = function(n) {
-                                        e.handleButtonMouseDown(t, n)
+                                        e.handleButtonClicked(t), e.handleButtonMouseDown(t, n)
                                     }, g.onmouseup = function(n) {
                                         e.handleButtonMouseUp(t, n)
                                     }) : (g.onpointerdown = function(n) {
