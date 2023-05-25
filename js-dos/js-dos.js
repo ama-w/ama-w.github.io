@@ -4407,7 +4407,7 @@
                     }], (n = [{
                         key: "getButtonClass",
                         value: function(e) {
-                            var t = e.includes("{") && e.includes("}") && "{//}" !== e ? "standardBtn" : "standardBtn",
+                            var t = e.includes("{") && e.includes("}") && "{//}" !== e ? "standardBtn" : "standardBtn", 
                                 n = e.replace("{", "").replace("}", ""),
                                 r = "";
                             return "standardBtn" !== t && (r = " hg-button-".concat(n)), "hg-".concat(t).concat(r)
