@@ -5077,7 +5077,7 @@
                                     }, g.onmouseup = function(n) {
                                         e.handleButtonMouseUp(t, n)
                                     }) : (g.onpointerdown = function(n) {
-                                        e.handleButtonClicked(t), e.handleButtonMouseDown(t, n)
+                                        e.handleButtonClicked(t), e.handleButtonMouseDown(t, n) 
                                     }, g.onpointerup = function(n) {
                                         e.handleButtonMouseUp(t, n)
                                     }, g.onpointercancel = function(n) {
