@@ -6245,7 +6245,7 @@
             262: n.KBD_right,
             263: n.KBD_left,
             264: n.KBD_down,
-            265: n.KBD_up
+            265: n.KBD_up 
         }, n.namedKeyCodes = {
             KBD_NONE: n.KBD_NONE,
             KBD_0: n.KBD_0,
